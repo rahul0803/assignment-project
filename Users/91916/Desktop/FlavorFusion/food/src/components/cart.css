@@ -1,0 +1,16 @@
+
+/* Custom scrollbar style */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    height: 0; /* Remove horizontal scrollbar space */
+  }
+  
+  .custom-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent; /* Optional: set thumb color */
+  }
+  
