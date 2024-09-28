@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #555;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    .app-container {
+      padding: 40px;
+    }
+  
+    label {
+      font-size: 1.1rem;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+  /* Mobile First Approach */
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 80%;
+  }
+
+  .basic-details, .advanced-settings {
+    padding: 30px;
+  }
+
+  input, select, textarea {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .app-container {
+    max-width: 60%;
+  }
+
+  .basic-details h2, .advanced-settings h2 {
+    font-size: 2rem;
+  }
+
+  input, select, textarea {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}

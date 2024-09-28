@@ -1,0 +1,117 @@
+
+.question-table {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-table h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.question-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.question-table th,
+.question-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.question-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+.question-table td {
+  vertical-align: middle;
+}
+
+.question-table .action-btns {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+.question-table button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-table button:hover {
+  background-color: #ccc;
+}
+
+.question-table select,
+.question-table input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.question-table button[type="button"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-table button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .question-table {
+    padding: 10px;
+  }
+  .question-table table {
+    font-size: 14px;
+  }
+  .question-table th,
+  .question-table td {
+    padding: 5px;
+  }
+  .question-table .action-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .question-table .action-btns button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .question-table {
+    padding: 5px;
+  }
+  .question-table table {
+    font-size: 12px;
+  }
+  .question-table th,
+  .question-table td {
+    padding: 2px;
+  }
+  .question-table .action-btns {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .question-table .action-btns button {
+    margin-bottom: 5px;
+  }
+}
